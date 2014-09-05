@@ -7,7 +7,6 @@ public class Endereco {
     private String cidade;
     private String rua;
     private int cep;
-    
 
     public int getIdEndereco() {
         return idEndereco;

@@ -7,7 +7,15 @@ public class Fornecedor {
     private String telefoneFornecedor;
     private int cnpj;
     private String nomeContatoFornecedor;
- 
+    private int inscricaoEstadual;
+
+    public int getIncricaoEstadual() {
+        return inscricaoEstadual;
+    }
+
+    public void setInscricaoEstadual(int incricaoEstadual) {
+        this.inscricaoEstadual = incricaoEstadual;
+    }
     
 
     public int getIdFornecedor() {
