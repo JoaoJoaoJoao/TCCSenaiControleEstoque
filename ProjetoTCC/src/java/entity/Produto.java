@@ -6,7 +6,16 @@ public class Produto {
     private String nomeProduto;
     private double custoProduto;
     private double valorProduto;
+    private int unidade;
 
+    public int getUnidade() {
+        return unidade;
+    }
+
+    public void setUnidade(int unidade) {
+        this.unidade = unidade;
+    }
+    
     public int getIdProduto() {
         return idProduto;
     }

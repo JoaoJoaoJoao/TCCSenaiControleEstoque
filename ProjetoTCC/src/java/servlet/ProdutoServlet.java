@@ -1,5 +1,5 @@
 package servlet;
-
+import dao.ProdutoDao;
 import entity.Produto;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -14,10 +14,14 @@ public class ProdutoServlet extends HttpServlet {
         String nomeProduto = req.getParameter("Nome do Produto");
         String custoProduto = req.getParameter("Custo do Produto");
         String valorProduto = req.getParameter("Valor do Produto");
+        String unidadeProduto = req.getParameter("Unidade do Produto");
         Produto novoProduto = new Produto();
+        novoProduto.setUnidade(Integer.parseInt(unidadeProduto));
         novoProduto.setNomeProduto(nomeProduto);
         novoProduto.setCustoProduto(Double.parseDouble(custoProduto));
         novoProduto.setValorProduto(Double.parseDouble(valorProduto));
+        ProdutoDao dao = new ProdutoDao();
+        dao.salvar(novoProduto);
     }
 
     @Override

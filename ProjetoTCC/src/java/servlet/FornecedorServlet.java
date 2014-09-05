@@ -24,6 +24,10 @@ public class FornecedorServlet extends HttpServlet {
         novoFornecedor.setInscricaoEstadual(Integer.parseInt(inscricaoEstadual));
 
     }
+    
+    
+    
+    
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
