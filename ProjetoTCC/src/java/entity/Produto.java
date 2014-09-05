@@ -1,15 +1,42 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package entity;
 
-/**
- *
- * @author joao_victor1
- */
 public class Produto {
-    
+
+    private int idProduto;
+    private String nomeProduto;
+    private double custoProduto;
+    private double valorProduto;
+
+    public int getIdProduto() {
+        return idProduto;
+    }
+
+    public void setIdProduto(int idProduto) {
+        this.idProduto = idProduto;
+    }
+
+    public String getNomeProduto() {
+        return nomeProduto;
+    }
+
+    public void setNomeProduto(String nomeProduto) {
+        this.nomeProduto = nomeProduto;
+    }
+
+    public double getCustoProduto() {
+        return custoProduto;
+    }
+
+    public void setCustoProduto(double custoProduto) {
+        this.custoProduto = custoProduto;
+    }
+
+    public double getValorProduto() {
+        return valorProduto;
+    }
+
+    public void setValorProduto(double valorProduto) {
+        this.valorProduto = valorProduto;
+    }
+
 }
