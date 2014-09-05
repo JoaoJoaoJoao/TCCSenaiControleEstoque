@@ -7,10 +7,14 @@ public class Fornecedor {
     private String telefoneFornecedor;
     private int cnpj;
     private String nomeContatoFornecedor;
+ 
+    
 
     public int getIdFornecedor() {
         return idFornecedor;
     }
+
+ 
 
     public void setIdFornecedor(int idFornecedor) {
         this.idFornecedor = idFornecedor;
