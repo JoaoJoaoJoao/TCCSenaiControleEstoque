@@ -11,12 +11,12 @@ public class ProdutoServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String nomeProduto = req.getParameter("Nome do Produto");
-        String custoProduto = req.getParameter("Custo do Produto");
-        String valorProduto = req.getParameter("Valor do Produto");
-        String unidadeProduto = req.getParameter("Unidade do Produto");
+        String nomeProduto = req.getParameter("nome");
+        String custoProduto = req.getParameter("custo");
+        String valorProduto = req.getParameter("valor");
+       // String unidadeProduto = req.getParameter("unidade");
         Produto novoProduto = new Produto();
-        novoProduto.setUnidade(Integer.parseInt(unidadeProduto));
+     //   novoProduto.setUnidade(Integer.parseInt(unidadeProduto));
         novoProduto.setNomeProduto(nomeProduto);
         novoProduto.setCustoProduto(Double.parseDouble(custoProduto));
         novoProduto.setValorProduto(Double.parseDouble(valorProduto));
