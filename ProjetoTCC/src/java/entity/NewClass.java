@@ -5,7 +5,7 @@
  */
 package entity;
 
-import dao.ProdutoDao;
+import dao.ProdutoDaoMySql;
 
 /**
  *
@@ -20,7 +20,7 @@ public class NewClass {
         pro.setUnidade(Integer.parseInt("545"));
         pro.setValorProduto(Double.parseDouble("5454"));
 
-        ProdutoDao dao = new ProdutoDao();
+        ProdutoDaoMySql dao = new ProdutoDaoMySql();
         dao.salvar(pro);
         System.out.println(pro);
     }

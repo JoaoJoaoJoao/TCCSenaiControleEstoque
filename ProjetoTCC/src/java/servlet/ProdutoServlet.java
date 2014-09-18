@@ -1,5 +1,5 @@
 package servlet;
-import dao.ProdutoDao;
+import dao.ProdutoDaoMySql;
 import entity.Produto;
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -20,7 +20,7 @@ public class ProdutoServlet extends HttpServlet {
         novoProduto.setNomeProduto(nomeProduto);
         novoProduto.setCustoProduto(Double.parseDouble(custoProduto));
         novoProduto.setValorProduto(Double.parseDouble(valorProduto));
-        ProdutoDao dao = new ProdutoDao();
+        ProdutoDaoMySql dao = new ProdutoDaoMySql();
         dao.salvar(novoProduto);
     }
 
