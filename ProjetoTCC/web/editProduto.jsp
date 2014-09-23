@@ -13,16 +13,9 @@
     </head>
     <body>
     <center>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
+
         <div><h1 style="color: whitesmoke;background: black">Cadastro de Produto </h1></div>
-        <form style="background: black" action="produtoServlet" method="get">
+        <form style="background: black" action="servlet" method="get">
 
             <h2 style="color: gold ;font-size: 20px">
                 Nome do Produto  : <input type="text" name="nome" /></h2>
@@ -33,6 +26,6 @@
                 Valor do Produto : <input type="text" name="valor"/></h4>
             <input style="background: gold" type="submit" value="salvar" />
         </form>
-    </center>>
+    </center>
 </body>
 </html>

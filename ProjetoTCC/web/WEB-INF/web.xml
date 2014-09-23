@@ -15,6 +15,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>ProjetoTCC</servlet-name>
-        <url-pattern>/produtoServlet</url-pattern>
+        <url-pattern>/servlet</url-pattern>
     </servlet-mapping>
 </web-app>
