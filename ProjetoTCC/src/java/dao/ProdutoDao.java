@@ -9,4 +9,10 @@ public interface ProdutoDao {
 
     public List<Produto> getAll();
 
+    public Produto getById(Integer id);
+
+    public Boolean excluir(Produto produto);
+
+    public Boolean autenticar(String user, String senha);
+
 }
