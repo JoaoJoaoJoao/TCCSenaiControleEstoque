@@ -10,7 +10,7 @@ import dao.Conexao;
 import dao.ProdutoDao;
 import entity.Produto;
 
-public abstract class ProdutoDAOMySql implements ProdutoDao {
+public class ProdutoDAOMySql implements ProdutoDao {
 
     private static final String INSERT = "INSERT INTO Produto"
             + "(nomeProduto,custoProduto,valorProduto, unidade) VALUE (?,?,?,?)";
@@ -77,7 +77,7 @@ public abstract class ProdutoDAOMySql implements ProdutoDao {
         Connection con = null;
         PreparedStatement ps = null;
         ResultSet generatedKeys = null;
-        if (produto.getIdProduto() == null) {
+        if (produto.getIdProduto()== null) {
             try {
                 con = Conexao.conectar();
                 ps = (PreparedStatement) con.prepareStatement(INSERT,

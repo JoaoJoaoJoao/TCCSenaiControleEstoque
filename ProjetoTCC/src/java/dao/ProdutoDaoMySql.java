@@ -40,10 +40,10 @@ public class ProdutoDaoMySql {
             while (rs.next()) {
                 Produto pro = new Produto();
                 pro.setIdProduto(rs.getInt("id"));
-                pro.setNomeProduto(rs.getString("nome"));
-                pro.setCustoProduto(rs.getDouble("custo"));
+                pro.setNomeProduto(rs.getString("nomeProduto"));
+                pro.setCustoProduto(rs.getDouble("custoProduto"));
                 pro.setUnidade(rs.getInt("unidade"));
-                pro.setValorProduto(rs.getInt("valor"));
+                pro.setValorProduto(rs.getInt("valorProduto"));
                 lista.add(pro);
             }
 

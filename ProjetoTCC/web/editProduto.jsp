@@ -18,12 +18,12 @@
         <form style="background: black" action="servlet" method="get">
 
             <h2 style="color: gold ;font-size: 20px">
-                Nome do Produto  : <input type="text" name="nome" /></h2>
+                Nome do Produto  : <input type="text" name="nomeProduto" /></h2>
 
             <h3 style="color: gold;font-size: 20px">
-                Custo do Produto : <input  type="text" name="custo"/></h3>
+                Custo do Produto : <input  type="text" name="custoProduto"/></h3>
             <h4 style="color: gold;font-size: 20px">
-                Valor do Produto : <input type="text" name="valor"/></h4>
+                Valor do Produto : <input type="text" name="valorProduto"/></h4>
             <input style="background: gold" type="submit" value="salvar" />
         </form>
     </center>
