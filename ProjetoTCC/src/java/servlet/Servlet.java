@@ -10,11 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import entity.Produto;
-import facade.produtoFacade;
+import facade.ProdutoFacade;
 
 public class Servlet extends HttpServlet {
 
-    produtoFacade facade = new produtoFacade();
+    ProdutoFacade facade = new ProdutoFacade();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)

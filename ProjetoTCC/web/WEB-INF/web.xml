@@ -11,7 +11,7 @@
     </session-config>
       <servlet>
         <servlet-name>ProjetoTCC</servlet-name>
-        <servlet-class>servlet.ProdutoServlet</servlet-class>
+        <servlet-class>servlet.Servlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ProjetoTCC</servlet-name>

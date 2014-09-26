@@ -72,7 +72,7 @@ public class ProdutoDAOMySql implements ProdutoDao {
     }
 
     @Override
-    public Produto salvar(Produto produto) {
+        public Produto salvar(Produto produto) {
         Produto retorno = null;
         Connection con = null;
         PreparedStatement ps = null;

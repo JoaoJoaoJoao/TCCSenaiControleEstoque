@@ -2,7 +2,7 @@ package entity;
 
 public class Produto {
 
-    private int idProduto;
+    private Integer idProduto;
     private String nomeProduto;
     private double custoProduto;
     private double valorProduto;
@@ -16,11 +16,11 @@ public class Produto {
         this.unidade = unidade;
     }
     
-    public int getIdProduto() {
+    public Integer getIdProduto() {
         return idProduto;
     }
 
-    public void setIdProduto(int idProduto) {
+    public void setIdProduto(Integer idProduto) {
         this.idProduto = idProduto;
     }
 
